@@ -1,0 +1,9 @@
+applications:
+- name: phpinfo
+  buildpack: https://github.com/cloudfoundry/php-buildpack
+  memory: 64M
+  stack: cflinuxfs2
+  services:
+   # New Relic Standard Plan
+   - newrelic-std 
+  
